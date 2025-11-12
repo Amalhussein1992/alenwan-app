@@ -1,0 +1,43 @@
+# Flutter
+.dart_tool/
+.flutter-plugins-dependencies
+.fvm/
+.flutter-plugins
+.packages
+pubspec.lock
+build/
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Platform-specific build artifacts
+android/.gradle/
+android/local.properties
+android/**/build/
+ios/Pods/
+ios/Podfile.lock
+ios/.symlinks/
+ios/Flutter/Flutter.podspec
+
+# Web
+web/
+
+# Miscellaneous
+*.log
+*.pyc
+*.pyo
+*.pdb
+.env
+.env.local
+
+# Generated files
+.claude/
+.fvm/
+c
+$null
+nul
