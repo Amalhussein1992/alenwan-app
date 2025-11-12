@@ -25,7 +25,7 @@ void main() {
     // Update title handling
     content = content.replaceAllMapped(
       RegExp(r'if \(j\[\'title\'\] is Map\)'),
-      (match) {
+      (Match match) {
         return '''dynamic titleData = j['title'];
     if (titleData is String && titleData.startsWith('{')) {
       try {
@@ -42,7 +42,7 @@ void main() {
     // Update description handling
     content = content.replaceAllMapped(
       RegExp(r'if \(j\[\'description\'\] is Map\)'),
-      (match) {
+      (Match match) {
         return '''dynamic descData = j['description'];
     if (descData is String && descData.startsWith('{')) {
       try {

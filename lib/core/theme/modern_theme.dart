@@ -96,13 +96,32 @@ class ModernTheme extends ProfessionalTheme {
   // Border radius
   static const double radiusSm = 8.0;
   static const double radiusMd = 12.0;
+  static const double radiusMedium = 12.0;  // Alias for radiusMd
   static const double radiusLg = 16.0;
   static const double radiusXl = 20.0;
+  static const double radiusXLarge = 24.0;
 
   // Elevation
   static const double elevationLow = 2.0;
   static const double elevationMedium = 4.0;
   static const double elevationHigh = 8.0;
+
+  // Additional spacing aliases
+  static const double spacingM = 16.0;  // Alias for spacingMd
+  static const double spacingL = 24.0;  // Alias for spacingLg
+  static const double spacingXL = 32.0;  // Alias for spacingXl
+
+  // Animation duration alias
+  static const Duration animationNormal = animationMedium;
+
+  // Glow shadow for effects
+  static List<BoxShadow> get glowShadow => [
+    BoxShadow(
+      color: primaryColor.withOpacity(0.6),
+      blurRadius: 40,
+      spreadRadius: 10,
+    ),
+  ];
 
   // Widget methods
   static Widget animatedBackground({Widget? child}) {
@@ -125,6 +144,23 @@ class ModernTheme extends ProfessionalTheme {
             Colors.black.withOpacity(0.3),
           ],
         ),
+      ),
+    );
+  }
+
+  // Modern card decoration
+  static BoxDecoration modernCard({
+    Color? backgroundColor,
+    BorderRadius? borderRadius,
+    List<BoxShadow>? boxShadow,
+  }) {
+    return BoxDecoration(
+      color: backgroundColor ?? surfaceColor,
+      borderRadius: borderRadius ?? BorderRadius.circular(radiusMd),
+      boxShadow: boxShadow ?? cardShadow,
+      border: Border.all(
+        color: Colors.white.withOpacity(0.1),
+        width: 1,
       ),
     );
   }

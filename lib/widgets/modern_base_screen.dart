@@ -87,10 +87,10 @@ class _ModernBaseScreenState extends State<ModernBaseScreen>
       body: Stack(
         children: [
           // Animated background
-          ModernTheme.animatedBackground(controller: _backgroundController),
+          ModernTheme.animatedBackground(),
 
           // Particle effect
-          ModernTheme.particleOverlay(controller: _particleController),
+          ModernTheme.particleOverlay(),
 
           // Main content with fade animation
           FadeTransition(

@@ -423,7 +423,7 @@ class _ModernHomeScreenState extends State<ModernHomeScreen>
                   _featuredContent.isNotEmpty
                       ? _featuredContent[_currentBannerIndex]['title']
                       : '',
-                  style: ProfessionalTheme.getTextStyle(
+                  style: ModernTheme.getTextStyle(
                     context: context,
                     fontSize: 36,
                     fontWeight: FontWeight.bold,
@@ -631,7 +631,7 @@ class _ModernHomeScreenState extends State<ModernHomeScreen>
                       ],
                       Text(
                         title,
-                        style: ProfessionalTheme.getTextStyle(
+                        style: ModernTheme.getTextStyle(
                           context: context,
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -941,7 +941,7 @@ class _ModernHomeScreenState extends State<ModernHomeScreen>
 
           Text(
             'loading'.tr(),
-            style: ProfessionalTheme.getTextStyle(
+            style: ModernTheme.getTextStyle(
               context: context,
               fontSize: 16,
               color: Colors.white.withOpacity(0.6),
