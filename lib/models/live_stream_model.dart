@@ -15,6 +15,9 @@ class LiveStreamModel {
   final bool isPaid;
   final int? viewersCount;
   final String? videoUrl;
+  final String? category;
+  final bool? isLiveNow;
+  final int? concurrentViewers;
 
   // ✅ جديد
   final int? channelId;
@@ -33,6 +36,9 @@ class LiveStreamModel {
     required this.isPaid,
     this.viewersCount,
     this.videoUrl,
+    this.category,
+    this.isLiveNow,
+    this.concurrentViewers,
     this.channelId, // ✅
   });
 
@@ -119,6 +125,11 @@ class LiveStreamModel {
           ? int.tryParse(json['viewers_count'].toString())
           : null,
       videoUrl: json['video_url']?.toString(),
+      category: json['category']?.toString(),
+      isLiveNow: json['is_live_now'] == 1 || json['is_live_now'] == true,
+      concurrentViewers: json['concurrent_viewers'] != null
+          ? int.tryParse(json['concurrent_viewers'].toString())
+          : null,
       channelId: json['channel_id'] != null
           ? int.tryParse(json['channel_id'].toString())
           : null,
@@ -138,6 +149,9 @@ class LiveStreamModel {
       'is_paid': isPaid ? 1 : 0,
       'viewers_count': viewersCount,
       'video_url': videoUrl,
+      'category': category,
+      'is_live_now': isLiveNow == true ? 1 : 0,
+      'concurrent_viewers': concurrentViewers,
       'channel_id': channelId, // ✅
     };
   }

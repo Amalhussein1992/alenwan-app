@@ -27,7 +27,7 @@ class _ModernHomeScreenState extends State<ModernHomeScreen>
   // Controllers
   final ScrollController _scrollController = ScrollController();
   final VimeoService _vimeoService = VimeoService();
-  final CarouselController _carouselController = CarouselController();
+  final CarouselSliderController _carouselController = CarouselSliderController();
 
   // Animation Controllers
   late AnimationController _fadeController;
