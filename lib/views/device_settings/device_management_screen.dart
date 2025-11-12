@@ -138,7 +138,7 @@ class _DeviceManagementScreenState extends State<DeviceManagementScreen>
         child: ClipRRect(
           borderRadius: BorderRadius.circular(20),
           child: BackdropFilter(
-            filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+            filter: ui.ui.ImageFilter.blur(sigmaX: 10, sigmaY: 10),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
@@ -278,7 +278,7 @@ class _DeviceManagementScreenState extends State<DeviceManagementScreen>
       child: ClipRRect(
         borderRadius: BorderRadius.circular(12),
         child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+          filter: ui.ImageFilter.blur(sigmaX: 10, sigmaY: 10),
           child: Row(
             children: [
               Expanded(
@@ -464,7 +464,7 @@ class _DeviceManagementScreenState extends State<DeviceManagementScreen>
       child: ClipRRect(
         borderRadius: BorderRadius.circular(16),
         child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+          filter: ui.ImageFilter.blur(sigmaX: 10, sigmaY: 10),
           child: Padding(
             padding: const EdgeInsets.all(16),
             child: Row(

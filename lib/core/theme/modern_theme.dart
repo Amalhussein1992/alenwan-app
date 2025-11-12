@@ -95,6 +95,7 @@ class ModernTheme extends ProfessionalTheme {
 
   // Border radius
   static const double radiusSm = 8.0;
+  static const double radiusSmall = 8.0;  // Alias for radiusSm
   static const double radiusMd = 12.0;
   static const double radiusMedium = 12.0;  // Alias for radiusMd
   static const double radiusLg = 16.0;
@@ -108,6 +109,7 @@ class ModernTheme extends ProfessionalTheme {
   static const double elevationHigh = 8.0;
 
   // Additional spacing aliases
+  static const double spacingXS = 4.0;  // Alias for spacingXs
   static const double spacingM = 16.0;  // Alias for spacingMd
   static const double spacingL = 24.0;  // Alias for spacingLg
   static const double spacingXL = 32.0;  // Alias for spacingXl

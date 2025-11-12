@@ -424,12 +424,13 @@ class ModernContentCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ModernTheme.modernCard(
-      padding: EdgeInsets.zero,
+    return InkWell(
       onTap: onTap,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
+      child: Container(
+        decoration: ModernTheme.modernCard(),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
           // Thumbnail
           Expanded(
             child: Stack(
