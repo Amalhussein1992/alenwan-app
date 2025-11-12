@@ -576,6 +576,7 @@ class ModernContentCard extends StatelessWidget {
           ),
         ],
       ),
+    ),
     );
   }
 

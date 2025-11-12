@@ -11,6 +11,9 @@ class ModernTheme extends ProfessionalTheme {
   static TextStyle subtitle2({BuildContext? context, Color? color, FontWeight? fontWeight, double? fontSize, double? height, double? letterSpacing}) =>
       ProfessionalTheme.subtitle2(context: context, color: color, fontWeight: fontWeight, fontSize: fontSize, height: height, letterSpacing: letterSpacing);
 
+  static TextStyle headline1({BuildContext? context, Color? color, FontWeight? fontWeight, double? fontSize, double? height, double? letterSpacing}) =>
+      ProfessionalTheme.headline1(context: context, color: color);
+
   static TextStyle headline2({BuildContext? context, Color? color, FontWeight? fontWeight, double? fontSize, double? height, double? letterSpacing}) =>
       ProfessionalTheme.headline2(context: context, color: color, fontWeight: fontWeight, fontSize: fontSize, height: height, letterSpacing: letterSpacing);
 
@@ -126,6 +129,16 @@ class ModernTheme extends ProfessionalTheme {
     ),
   ];
 
+  // Primary shadow for cards and elevated elements
+  static List<BoxShadow> get primaryShadow => [
+    BoxShadow(
+      color: primaryColor.withOpacity(0.3),
+      blurRadius: 20,
+      spreadRadius: 2,
+      offset: const Offset(0, 10),
+    ),
+  ];
+
   // Widget methods
   static Widget animatedBackground({Widget? child}) {
     return Container(
@@ -164,6 +177,55 @@ class ModernTheme extends ProfessionalTheme {
       border: Border.all(
         color: Colors.white.withOpacity(0.1),
         width: 1,
+      ),
+    );
+  }
+
+  // Gradient button widget
+  static Widget gradientButton({
+    required String label,
+    required VoidCallback onPressed,
+    IconData? icon,
+    bool isPrimary = true,
+  }) {
+    return Container(
+      decoration: BoxDecoration(
+        gradient: isPrimary ? primaryGradient : null,
+        color: isPrimary ? null : Colors.white.withOpacity(0.1),
+        borderRadius: BorderRadius.circular(radiusLarge),
+        border: Border.all(
+          color: isPrimary ? Colors.transparent : Colors.white.withOpacity(0.2),
+          width: 1,
+        ),
+      ),
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: onPressed,
+          borderRadius: BorderRadius.circular(radiusLarge),
+          child: Padding(
+            padding: EdgeInsets.symmetric(
+              horizontal: spacingL,
+              vertical: spacingM,
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                if (icon != null) ...[
+                  Icon(icon, color: Colors.white, size: 20),
+                  SizedBox(width: spacingS),
+                ],
+                Text(
+                  label,
+                  style: subtitle1(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }

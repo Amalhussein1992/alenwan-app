@@ -1,4 +1,5 @@
 import 'dart:ui' as ui;
+import 'dart:math' as Math;
 
 import 'package:flutter/material.dart';
 
@@ -451,6 +452,3 @@ class CinemaBackgroundPainter extends CustomPainter {
   @override
   bool shouldRepaint(covariant CustomPainter oldDelegate) => true;
 }
-
-// Math import
-import 'dart:math' as Math;

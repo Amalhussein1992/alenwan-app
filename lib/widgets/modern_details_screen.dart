@@ -123,7 +123,7 @@ class _ModernDetailsScreenState extends State<ModernDetailsScreen>
       body: Stack(
         children: [
           // Animated background
-          ModernTheme.animatedBackground(controller: _backgroundController),
+          ModernTheme.animatedBackground(),
 
           // Main content
           CustomScrollView(
@@ -547,6 +547,7 @@ class _ModernDetailsScreenState extends State<ModernDetailsScreen>
           ),
         ],
       ),
+    ),
     );
   }
 

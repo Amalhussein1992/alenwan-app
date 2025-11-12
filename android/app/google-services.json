@@ -1,41 +1,41 @@
 {
   "project_info": {
-    "project_number": "106732785676",
-    "project_id": "alenwan-media",
-    "storage_bucket": "alenwan-media.firebasestorage.app"
+    "project_number": "73476107727",
+    "project_id": "alenwan-1b960",
+    "storage_bucket": "alenwan-1b960.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:106732785676:android:ba803c3938d294d4b3de29",
+        "mobilesdk_app_id": "1:73476107727:android:6b3b5cfd9622b7c720f6ba",
         "android_client_info": {
           "package_name": "com.alenwan.app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "106732785676-h01nb8slhe86m55ul033tkf4r2al1o7t.apps.googleusercontent.com",
+          "client_id": "73476107727-lrkigf4asgnpob47njkkdndt7mijecu3.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.alenwan.app",
-            "certificate_hash": "d754fcd0214584c76709d71a1b23d304e8b1cdc5"
+            "certificate_hash": "03bc4570eef43ec6401c286e1ba02e8d91ded269"
           }
         },
         {
-          "client_id": "106732785676-lkplddjjjl2g8gq53sc5kv3l3ghivphs.apps.googleusercontent.com",
+          "client_id": "73476107727-tqvvpfn4hnkr6goe99sh3db1drnpp2nh.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBP4gjMenN6isZ2iU_KZnKy_D9F5cs9GOA"
+          "current_key": "AIzaSyCgAIaNF7QRZrvlOKkmoHKQeTNMk4WBugY"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "106732785676-lkplddjjjl2g8gq53sc5kv3l3ghivphs.apps.googleusercontent.com",
+              "client_id": "73476107727-tqvvpfn4hnkr6goe99sh3db1drnpp2nh.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
@@ -44,27 +44,27 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:106732785676:android:3943cdc534b0e283b3de29",
+        "mobilesdk_app_id": "1:73476107727:android:1bd8b385015a2ebc20f6ba",
         "android_client_info": {
-          "package_name": "com.example.alenwan"
+          "package_name": "com.alenwan.play2"
         }
       },
       "oauth_client": [
         {
-          "client_id": "106732785676-lkplddjjjl2g8gq53sc5kv3l3ghivphs.apps.googleusercontent.com",
+          "client_id": "73476107727-tqvvpfn4hnkr6goe99sh3db1drnpp2nh.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBP4gjMenN6isZ2iU_KZnKy_D9F5cs9GOA"
+          "current_key": "AIzaSyCgAIaNF7QRZrvlOKkmoHKQeTNMk4WBugY"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "106732785676-lkplddjjjl2g8gq53sc5kv3l3ghivphs.apps.googleusercontent.com",
+              "client_id": "73476107727-tqvvpfn4hnkr6goe99sh3db1drnpp2nh.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

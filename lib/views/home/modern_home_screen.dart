@@ -1,19 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:shimmer/shimmer.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:provider/provider.dart';
 import 'dart:ui';
 import 'dart:math' as math;
 import '../../core/theme/modern_theme.dart';
-import '../../controllers/auth_controller.dart';
-import '../../widgets/content_card.dart';
-import '../../widgets/continue_watching_card.dart';
 import '../../widgets/app_navigation_wrapper.dart';
 import '../../core/services/vimeo_service.dart';
-import '../../core/services/api_client.dart';
 
 class ModernHomeScreen extends StatefulWidget {
   const ModernHomeScreen({super.key});
@@ -27,7 +20,8 @@ class _ModernHomeScreenState extends State<ModernHomeScreen>
   // Controllers
   final ScrollController _scrollController = ScrollController();
   final VimeoService _vimeoService = VimeoService();
-  final CarouselSliderController _carouselController = CarouselSliderController();
+  final CarouselSliderController _carouselController =
+      CarouselSliderController();
 
   // Animation Controllers
   late AnimationController _fadeController;
